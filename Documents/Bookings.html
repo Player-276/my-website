@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bookings</title>
+</head>
+
+<body>
+
+<header>
+  <nav>
+    <center><b><h1>UTOPIA PORTRAITS</h1></b></center>
+    
+   <center>
+    <a href="Index1.html">Home</a>
+      <a href="My Collection.html">Portfolio</a>
+      <a href="About us.html">About</a>
+      <a href="Deals.html">Offers</a>
+      <a href="Bookings.html">Bookings</a>
+    
+      </center>
+  </nav>
+  <br>
+</header>
+<div class="container">
+    <h2>Book Your Session</h2>
+    <form action="submit_booking.php" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <label for="date">Preferred Date:</label>
+        <input type="date" id="date" name="date" required><br><br>
+
+        <label for="package">Select Package:</label>
+        <select id="package" name="package" required>
+            <option value="">--Select--</option>
+            <option value="portrait">Portrait Package</option>
+            <option value="matric">Matric Dance Package</option>
+            <option value="wedding">Wedding Package</option>
+            <option value="brand">Brand Photoshoot</option>
+        </select><br><br>
+
+        <button type="submit">Book Now</button>
+    </form>
+</div>
+</body>
+</html>
